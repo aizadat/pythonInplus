@@ -1,0 +1,349 @@
+{%load static%}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  height: 10000px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.first {
+  border-bottom: 1px solid black;
+}
+
+.left {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  gap: 20px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  gap: 20px;
+}
+.links span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav2 {
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 25px 0;
+}
+
+.nav_list li {
+  padding: 25px 0;
+}
+.nav_list li a:hover{
+  font-size: 20px;
+  color: rgb(52, 117, 214);
+}
+/* main body */
+
+main {
+  width: 100%;
+}
+
+.bg_img {
+  background-image: url(https://cumming.ucalgary.ca/sites/default/files/styles/ucws_hero_cta_desktop/public/2020-11/Surg%20Section_Gen%20Surg_shutterstock_1265400856.jpg?itok=tBJEAVnY);
+  background-position: center;
+  background-size: cover;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 20px;
+  height: 80vh;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  padding: 25px 0;
+}
+
+.inner_text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+.inner_text h1 {
+  width: 650px;
+  font: 5.5rem bold;
+  color: white;
+  text-align: start;
+  margin: 10px 0;
+}
+.inner_text h4 {
+  font: 2rem bold;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: start;
+  margin: 15px 0;
+}
+.bottom-link {
+  padding: 25px;
+}
+
+.span {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 25px;
+  padding-right: 50px;
+  border-right: 0.5px solid black;
+}
+.nav_list span a > img {
+  height: 100%;
+}
+.span a {
+  font-size: 2rem;
+}
+
+/* art_section */
+
+.first_sec {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 0 0;
+
+  border-bottom: 1px solid black;
+  padding-bottom: 100px;
+}
+.col {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.col > h2 {
+  font: 3.2rem bolder;
+  color: black;
+
+  width: 290px;
+}
+
+.col > button {
+  margin-left: -15px;
+  margin-top: 15px;
+  padding: 16px 24px;
+  border-radius: 50px;
+  border: 0.5px solid black;
+  background-color: #0057b8;
+}
+
+.col a {
+  color: white;
+}
+
+.art_sec {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.art_sec article {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 300px;
+}
+.art_sec article h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.art_sec article p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.second_card {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.second_card div {
+  width: 350px;
+  height: 300px;
+}
+
+.first_card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first_card h4 {
+  font-size: 2.3rem;
+  margin: 15px 0;
+  font-weight: 600;
+}
+.first_card p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.second_cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.second_cards h4 {
+  font-size: 2.3rem;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.second_cards ul li {
+  padding: 5px 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-top: 1px solid black;
+}
+
+.third_cards h4 {
+  font-size: 2rem;
+  margin: 15px 0;
+  font-weight: 500;
+}
+.third_cards img {
+  width: 100%;
+}
+.third_cards p {
+  font-size: 1.2rem;
+  padding: 15px;
+}
+
+.art_sec2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.art_sec2 article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 300px;
+}
+.art_sec2 article h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.art_sec2 article p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.col2 {
+  width: 580px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  text-align: start;
+}
+.col2 > h2 {
+  font: 3.2rem bolder;
+  color: black;
+
+  width: 290px;
+}
+
+.first_sec2 {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0 0 0;
+
+  padding-top: 100px;
+}
+
+
+footer {
+  width: 100%;
+  height: 500px;
+  background: #000;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  color: white;
+
+}
+
+
+.col-md-3 > h4{
+  color: white;
+  font-size: 25px;
+}
+.list-unstyled  li a {
+  color: white;
+  font-size: 20px;
+}
+
+.list-unstyled  li a:hover{
+  font-size: 21px;
+  color: rgb(52, 117, 214);
+}
+
+.col-md-3 col-6 h4:hover{
+    font-size: 22px;
+    color: rgb(52, 117, 214);
+}

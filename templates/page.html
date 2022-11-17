@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css ' %}" />
+  </head>
+  <body>
+    <header>
+      <nav class="first nav">
+        <div class="logo right">
+          <img
+            src="./InPlus.png"
+            alt="logo"
+
+          />
+          <!-- <h2>inPlus</h2> -->
+        </div>
+        <div class="logo left">
+          <input type="text" />
+          <div class="links">
+            <span>
+              <img src="./icon1.png" alt="icon" width="25" height="25" />
+              <p>Login into patient account</p>
+            </span>
+            <p>Lorem.</p>
+          </div>
+        </div>
+      </nav>
+      <nav class="nav2">
+        <ul class="nav_list">
+          <li><a href="#">Care at Inplus</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Treatmens</a></li>
+          <li><a href="#">Research</a></li>
+          <li><a href="#">Medical Academy</a></li>
+          <li><a href="#">Giving to Inplus</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      {% for i in homepage%}
+      <div class="bg_img" style="background-image:url({{i.image.url}})">
+        <div class="inner_text">
+          <h1> {{i.title}} </h1>
+          <h4>{{i.text}}</h4>
+        </div>
+      </div>
+      {%endfor%}
+      <div class="nav2">
+        <div class="list bottom_link">
+          <span class="span">
+            <a href="#">Care at Inplus</a>
+            <img src="./arrove.png" alt="axax" width="50px" />
+          </span>
+          <span class="span">
+            <a href="#">Health Information</a>
+            <img src="./arrove.png" alt="axax" width="50px" />
+          </span>
+          <span class="span">
+            <a href="#">For Medical Professionals</a>
+            <img src="./arrove.png" alt="axax" width="50px" />
+          </span>
+        </div>
+      </div>
+      <section class="first_sec">
+        <div class="col">
+          <h2>Why choose Inplus?</h2>
+          <button>
+            <a href="#">Learn more about Inplus</a>
+          </button>
+        </div>
+        <div class="art_sec">
+          <article>
+            <div>
+              <h3>More experience</h3>
+              <p>
+                The million patients we treat each year prepares us to treat the
+                one who matters most — you.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <h3>Our achievments</h3>
+              <p>Our specialists improve every year and reach high goals.</p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <h3>You come first</h3>
+              <p>
+                Treatment at Inplus is a truly human experience. You're cared
+                for as a person first..
+              </p>
+            </div>
+          </article>
+          <article>
+            <div>
+              <h3>The rights answers</h3>
+              <p>
+                Count on our experts to deliver an accurate diagnosis and the
+                right plan for you the first time.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="second_card">
+        <div class="first_card">
+        </div>
+        <div class="second_cards">
+          <h4>Options by location</h4>
+          <ul>
+            <li>Bishkek</li>
+            <li>Osh</li>
+            <li>Talas</li>
+            <li>Issyk-Kol</li>
+          </ul>
+        </div>
+        <div class="third_cards">
+          <h4>Our clinics</h4>
+          <img
+            src="./map.jpg"
+            alt="axaax"
+            width="320"
+            height="220"
+          />
+          <hr />
+          <p>Check cases and your local forecast</p>
+        </div>
+      </div>
+      <section class="first_sec2">
+        <div class="col2">
+          <h2>Our advantages</h2>
+        </div>
+        <div class="art_sec2">
+          <article>
+            <div>
+              <img
+                src="http://blog.locumotive.co.uk/wp-content/uploads/2021/05/laser-eye-surgery-main.jpg"
+                alt=""
+                width="300"
+                height="200"
+              />
+
+              <h3>Eye surgery</h3>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img
+                src="https://www.augustahealth.com/wp-content/uploads/2021/10/operation-on-a-patient-at-a-cardiac-surgery.jpg"
+                alt=""
+                width="300"
+                height="200"
+              />
+              <h3>Cardiac surgery</h3>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img
+                src="https://www.sierraneurosurgery.com/wp-content/uploads/2020/07/Brain-scans-on-a-screen-at-Sierra-Neurosurgery-Siemens-MRI-imaging-center-Reno-NV.jpg"
+                alt=""
+                width="300"
+                height="200"
+              />
+              <h3>Neuro surgery</h3>
+            </div>
+          </article>
+          <article>
+            <div>
+              <img
+                src="https://familyhc.kz/assets/images/scale_1200.png"
+                alt=""
+                width="300"
+                height="200"
+              />
+              <h3>For kids</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer one">
+        <section class ="footer">
+        <div class = "container">
+        </div>
+        <div class = "row">
+         <div class = "col-md-3 col-6">
+           <h4>Information</h4>
+           <u1 class = "list-unstyled">
+             <li><a href="#">Find a doctor</a> </li>
+             <li><a href="#">Refer a patient</a> </li>
+             <li><a href="#">View clinical trials</a> </li>
+           </u1>
+         </div>
+         <div class = "col-md-3 col-6 ">
+           <h4>For students</h4>
+           <u1 class = "list-unstyled">
+             <li><a href="#">View degree programs</a> </li>
+             <li><a href="#">View admissions requirements</a> </li>
+             <li><a href="#">Log in to the student portal</a> </li>
+           </u1>
+         </div>
+         <div class = "col-md-3 col-6">
+           <h4>For pations</h4>
+           <u1 class = "list-unstyled">
+             <li><a href="#">Find a doctor</a> </li>
+             <li><a href="#">Research symptoms</a> </li>
+             <li><a href="#">Log in to the patient portal</a> </li>
+           </u1>
+        </div>
+        <div class = "col-md-3 col-6">
+         <h4>Contacts</h4>
+         <u1 class = "list-unstyled">
+           <li><a href="#">E-mail</a> </li>
+           <li><a href="#">Hot call</a> </li>
+           <li><a href="#">Main deparment</a></li>
+        </u1>
+       </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
+
